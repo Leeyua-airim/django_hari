@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.env
+*.DS_Store
+
+# VSCode
+.vscode/
+
+# Django migrations
+**/migrations/
+!*/migrations/__init__.py
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# Conda
+env/
+venv/
+*.conda
+
+# Mac
+.DS_Store
