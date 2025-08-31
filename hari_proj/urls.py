@@ -20,5 +20,6 @@ from llm_dashboard import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("llm_dashboard/", include('llm_dashboard.urls')) # llmboard/ 로 접근할 경우 llm_dashboard/urls.py 참고
+    path("llm_dashboard/", include('llm_dashboard.urls')), # llmboard/ 로 접근할 경우 llm_dashboard/urls.py 참고
+    path("llm_testing/", include('llm_testing.urls')), # llmboard/ 로 접근할 경우 llm_dashboard/urls.py 참고
 ]

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollama Test</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="user_input" placeholder="질문을 입력하세요" style="width:300px">
+        <button type="submit">전송</button>
+    </form>
+
+    {% if response %}
+        <hr>
+        <strong>모델 응답:</strong>
+        <p>{{ response }}</p>
+    {% endif %}
+
+</body>
+</html>
